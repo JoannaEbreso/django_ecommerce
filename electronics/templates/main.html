@@ -1,0 +1,80 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecommerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <script src="{% static 'js/prod.js' %}"></script>
+    <script src="{% static 'js/update_cart.js' %}"></script>
+
+</head>
+<body>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="{% url 'electronics:index' %}">Electronics</a>
+<!--       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--           <span class="navbar-toggler-icon"></span>-->
+<!--       </button>-->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'electronics:index' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+    <!--            <li class="nav-item">-->
+    <!--                <a class="nav-link" href="#">Link</a>-->
+    <!--            </li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'electronics:comp_access' %}">Computer Accessories</a>
+                        <a class="dropdown-item" href="#">Home Appliances</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+    <!--            <li class="nav-item">-->
+    <!--                <a class="nav-link disabled" href="#">Disabled</a>-->
+    <!--            </li>-->
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                {% if session_id  %}
+                    <a href="{% url 'electronics:logout' %}" class="btn btn-warning">logout</a>
+                    <p style="color:white" id="message-cart"></p>
+                    <p style="color:white" id="message-cart-init"></p>
+                {% else %}
+                    <a href="{% url 'electronics:signup' %}" class="btn btn-warning">Sign Up</a>
+                    <a href="{% url 'electronics:login' %}" class="btn btn-warning">Login</a>
+                {% endif %}
+                    <a href="{% url 'electronics:cart' %}"><i class="fa fa-cart-arrow-down" style="color:white;" aria-hidden="true"></i></a>
+
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+         <div class="container">
+                <br>
+                {% block content %}
+
+
+                {% endblock content %}
+         </div>
+<!--    <script src="{% static 'js/update_cart.js.js' %}"></script>-->
+
+</body>
+</html>

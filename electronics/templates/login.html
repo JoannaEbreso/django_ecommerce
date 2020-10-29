@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block content %}
+<div class="box-element pb-6 mb-4">
+    <h2 class="pt-2 pb-2 text-success"><span>Login Form</span></h2>
+        <form action="{% url 'electronics:login' %}" method="POST" class="form-fields">
+            {% csrf_token %}
+            <div class="mycustomstyle">
+                {{form.as_p}}
+                <button class="btn btn-success btn-lg" type="submit">Login</button>
+            </div>
+        </form>
+        Don't have an account?
+        <a href="signup" target="blank"><strong>register here</strong></a>!
+        <h4>For New People</h4>
+        <p><a href="{% url 'electronics:signup' %}">Register Here</a> (Or) go back to <a href="{% url 'electronics:index' %}">Home<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></p>
+</div>
+
+{% endblock content %}
+
+
+    <!--				<form action="{% url 'electronics:login' %}" method="post">-->
+    <!--					<input type="email" placeholder="Email Address" required=" " >-->
+    <!--					<input type="password" placeholder="Password" required=" " >-->
+    <!--					<div class="forgot">-->
+    <!--						<a href="#">Forgot Password?</a>-->
+    <!--					</div>-->
+    <!--					<input type="submit" value="Login">-->
+    <!--				</form>-->

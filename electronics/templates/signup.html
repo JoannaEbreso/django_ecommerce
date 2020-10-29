@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block content %}
+<div class="box-element pb-6 mb-4">
+    <h2 class="pt-2 pb-2 text-success"><span>Sign In To Your Account</span></h2>
+
+    <form action="{% url 'electronics:signup' %}" method="post" class="form-fields ">
+        {% csrf_token %}
+        <div class="mycustomstyle ">
+            {{form.as_p}}
+
+            <p class="text-center">
+                <button type="submit" class="btn btn-success btn-block my-4 text-center">Get Started</button>
+
+            </p>
+        </div>
+
+    </form>
+
+    <p>Click the login below to login</p>
+    <a class="btn btn-success text-align" href="/login">LOGIN</a>
+</div>
+
+{% endblock content%}
