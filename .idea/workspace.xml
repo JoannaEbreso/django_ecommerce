@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f924ca3-5192-40b1-abbe-1c9f5a25fc5d" name="Default Changelist" comment="" />
+    <list default="true" id="1f924ca3-5192-40b1-abbe-1c9f5a25fc5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecommerceProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ecommerceProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electronics/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/electronics/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electronics/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/electronics/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +22,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1iaWNGM8SjI2nS7KUtScs2IuQ2n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -24,13 +35,14 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/electronics/static/js" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/electronics" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\workspace\django\ecommerceProject\electronics\static\js" />
       <recent name="C:\workspace\django\ecommerceProject\electronics" />
+      <recent name="C:\workspace\django\ecommerceProject\electronics\static\js" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -62,9 +74,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="167" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1602351556198" />
-    <state x="362" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1603163704742">
+    <state x="362" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1604447818505">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="362" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1603163704742" />
+    <state x="362" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1604447818505" />
   </component>
 </project>

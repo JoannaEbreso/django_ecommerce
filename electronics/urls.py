@@ -14,4 +14,5 @@ urlpatterns = [
     path('login/', views.auth_login, name="login"),
     path('logout/', views.auth_logout, name="logout"),
     path('compAccess/', views.computer_accessories, name="comp_access"),
+
 ]
